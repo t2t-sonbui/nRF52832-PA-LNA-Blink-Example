@@ -44,7 +44,7 @@ nrf_clock_lf_cfg_t const clock_lf_cfg =
 **//main.c**
 Add config the PA/LNA before main funciton
 ```
-#define APP_PA_LAN
+#ifdef APP_PA_LAN
 static void pa_lna_assist(uint32_t gpio_pa_pin, uint32_t gpio_lna_pin)
 {
     ret_code_t err_code;
